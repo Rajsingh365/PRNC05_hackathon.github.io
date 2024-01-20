@@ -16,9 +16,9 @@ body{
   box-sizing: border-box;
 }
 .header {
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  top: 2rem;
+  /* top: 2rem; */
   left: 0;
   z-index: 2;
 }
