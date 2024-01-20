@@ -22,14 +22,23 @@
   .auto-type{
     font-size: 6rem;
   }
+  .homecontainer{
+    height: 60vh;
+  }
 }
 @media (max-width: 700px){
   .auto-type{
     font-size: 5rem;
   }
+  .homecontainer{
+    height: 55vh;
+  }
 }
 @media (max-width: 500px){
   .auto-type{
     font-size: 4rem;
+  }
+  .homecontainer{
+    height: 50vh;
   }
 }

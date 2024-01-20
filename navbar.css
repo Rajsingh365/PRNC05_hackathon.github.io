@@ -74,16 +74,18 @@ nav a img{
   color: goldenrod;
   cursor: pointer;
 }
-#footer-icons .col-auto {
-  height: 4rem;
+#footer-icons .col button {
+  height: 5rem;
   width: 5rem;
+  text-align: center;
   margin: 2rem 2rem;
   border: 1px solid white;
   border-radius: 50%;
   transition: all .5s ease-in-out;
 }
-#footer-icons .col-auto:hover{
+#footer-icons .col button:hover{
   color: darkgoldenrod;
   background-color: goldenrod;
+  border: 1px solid #33ff99;
   cursor: pointer;
 }
