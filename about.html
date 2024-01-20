@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    header::before {
+      z-index: -1;
+      position: absolute;
+      opacity: 0.4;
+      background-color: rgb(185, 193, 200);
+    }
+
+    #img-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* content part*/
+    .ul {
+      list-style: none;
+    }
+
+    .p {
+      font-size: 1.5rem;
+      padding: 0.8rem;
+    }
+
+    .li {
+      padding: 0.5rem;
+    }
+
+    .aboutusrow {
+      border: 2px solid black;
+    }
+
+    .li .headings {
+      font-size: 2rem;
+    }
+
+    .mission-heading,
+    .vision-heading {
+      font-size: 3rem;
+      text-decoration-line: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./Images/logo.png" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-border-width"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistics.html">Quizes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- About us Start here  -->
+    <!-- mission -->
+
+    <div class="mission">
+      <h2 class="d-flex justify-content-center mission-heading">Mission</h2>
+      <p class="d-flex justify-content-center p " style="font-size: 1.3rem;">
+        Our mission is to ensure universal access to clean and safe water,
+        promoting health, dignity, and sustainable development.
+      </p>
+    </div>
+
+    <!-- vision -->
+
+    <div class="vision">
+      <h2 class="d-flex justify-content-center vision-heading">Vision</h2>
+      <p class="d-flex justify-content-center p" style="font-size: 1.3rem;">
+        We envision a world where every individual has access to clean water,
+        leading to improved health, economic growth, and environmental
+        sustainability.
+      </p>
+      <!-- boxes -->
+      <div class="container text-center">
+
+        <!-- box1 -->
+        <div class="row mt-5 aboutusrow">
+          <div class="col-lg-8">
+            <ul class="visionList ul">
+              <li class="list li">
+                <h4 class="headings">Global Impact</h4>
+                <p class="p">
+                  We envision a world where clean water is not a privilege but a
+                  fundamental human right. By addressing water challenges at the
+                  local level, we aim to contribute to a global movement for
+                  sustainable water practices, fostering a planet where every
+                  individual enjoys the benefits of safe and accessible water.
+                </p>
+              </li>
+              <li class="list li">
+                <h4 class="headings">Long-Term Sustainability</h4>
+                <p class="p">
+                  Our commitment extends beyond immediate relief. We are
+                  dedicated to building sustainable water solutions that endure
+                  for generations. Through community engagement,
+                  capacity-building, and innovative infrastructure, we strive to
+                  create lasting change, ensuring that clean water remains a
+                  constant resource for all.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4" id="img-div">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </div>
+        </div>
+
+        <!-- box2 -->
+        <div class="row mt-5 aboutusrow">
+          <div class="col-lg-4" id="img-div">
+            <img class="d-flex align-items-center"
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </div>
+          <div class="col-lg-8">
+            <ul class="visionList ul">
+              <li class="list li">
+                <h4 class="headings">Innovation and Technology</h4>
+                <p class="p">
+                  In the pursuit of excellence, we embrace innovation and
+                  technology. From cutting-edge water purification methods to
+                  data-driven solutions, we leverage the latest advancements to
+                  maximize the impact of our projects. By staying at the
+                  forefront of technological progress, we ensure that our
+                  initiatives are efficient, scalable, and sustainable.
+                </p>
+              </li>
+              <li class="list li">
+                <h4 class="headings">Resilience in the Face of Climate Change</h4>
+                <p class="p">
+                  Climate change poses significant challenges to water
+                  resources worldwide. Our vision includes building resilient
+                  water systems that can withstand the impacts of a changing
+                  climate. By integrating climate-smart practices into our
+                  projects, we strive to ensure the longevity and
+                  effectiveness of our interventions in the face of
+                  environmental uncertainties.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- box3 -->
+
+        <div class="row mt-5 aboutusrow">
+          <div class="col-lg-8">
+            <ul class="visionList ul">
+              <li class="list li">
+                <h4 class="headings">Advocacy for Policy Change</h4>
+                <p class="p">
+                  To achieve widespread impact, we actively engage in advocacy
+                  efforts to influence policy change. By collaborating with
+                  policymakers, stakeholders, and like-minded organizations,
+                  we work towards creating policies that support sustainable
+                  water management. Our vision extends beyond immediate
+                  action, aiming to create a policy environment that fosters
+                  long-term positive change.
+                </p>
+              </li>
+              <li class="list li">
+                <h4 class="headings">Community Collaboration</h4>
+                <p class="p">
+                  Central to our vision is the belief that communities play a
+                  vital role in shaping their own futures. We actively
+                  collaborate with local residents, fostering a sense of
+                  ownership and involvement in decision-making processes.
+                  Through inclusive partnerships, we ensure that our
+                  initiatives not only meet the immediate needs of communities
+                  but also reflect their aspirations and priorities.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4" id="img-div">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about us Ends Here  -->
+
+
+  <!-- footer Start here  -->
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      body {
+        background-color: rgb(185, 193, 200);
+      }
+
+      #img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* content part*/
+      .ul {
+        list-style: none;
+      }
+
+      .p {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+      }
+
+      .li {
+        padding: 0.8rem;
+      }
+
+      .aboutusrow {
+        border: 2px solid black;
+      }
+
+      .li .headings {
+        font-size: 3rem;
+      }
+
+      .mission-heading,
+      .vision-heading {
+        font-size: 4rem;
+        text-decoration-line: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img src="./Images/logo.png" class="img-fluid"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-border-width"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"  href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="solution.html">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="join.html">Join Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html" aria-current="page">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- About us Start Here  -->
+      <!-- mission -->
+
+    <div class="mission">
+      <h2 class="d-flex justify-content-center mission-heading">Mission</h2>
+      <p class="d-flex justify-content-center p " style="font-size: 1.3rem;">
+        Our mission is to ensure universal access to clean and safe water,
+        promoting health, dignity, and sustainable development.
+      </p>
+    </div>
+
+    <!-- vision -->
+
+    <div class="vision">
+      <h2 class="d-flex justify-content-center vision-heading">Vision</h2>
+      <p class="d-flex justify-content-center p" style="font-size: 1.3rem;">
+        We envision a world where every individual has access to clean water,
+        leading to improved health, economic growth, and environmental
+        sustainability.
+      </p>
+      <!-- boxes -->
+      <div class="container text-center">
+
+        <!-- box1 -->
+        <div class="row mt-5 aboutusrow">
+          <div class="col-lg-8">
+            <ul class="visionList ul">
+              <li class="list li">
+                <h4 class="headings">Global Impact</h4>
+                <p class="p">
+                  We envision a world where clean water is not a privilege but a
+                  fundamental human right. By addressing water challenges at the
+                  local level, we aim to contribute to a global movement for
+                  sustainable water practices, fostering a planet where every
+                  individual enjoys the benefits of safe and accessible water.
+                </p>
+              </li>
+              <li class="list li">
+                <h4 class="headings">Long-Term Sustainability</h4>
+                <p class="p">
+                  Our commitment extends beyond immediate relief. We are
+                  dedicated to building sustainable water solutions that endure
+                  for generations. Through community engagement,
+                  capacity-building, and innovative infrastructure, we strive to
+                  create lasting change, ensuring that clean water remains a
+                  constant resource for all.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4" id="img-div">
+            <img src="data:image/jpeg;base64,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" alt="">
+          </div>
+        </div>
+
+        <!-- box2 -->
+        <div class="row mt-5 aboutusrow">
+            <div class="col-lg-4" id="img-div">
+                <img class="d-flex align-items-center" src="data:image/jpeg;base64,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" alt="">
+              </div>
+            <div class="col-lg-8">
+              <ul class="visionList ul">
+                <li class="list li">
+                  <h4 class="headings">Innovation and Technology</h4>
+                  <p class="p">
+                    In the pursuit of excellence, we embrace innovation and
+                    technology. From cutting-edge water purification methods to
+                    data-driven solutions, we leverage the latest advancements to
+                    maximize the impact of our projects. By staying at the
+                    forefront of technological progress, we ensure that our
+                    initiatives are efficient, scalable, and sustainable.
+                  </p>
+                </li>
+                <li class="list li">
+                  <h4 class="headings">Resilience in the Face of Climate Change</h4>
+                  <p class="p">
+                    Climate change poses significant challenges to water
+                    resources worldwide. Our vision includes building resilient
+                    water systems that can withstand the impacts of a changing
+                    climate. By integrating climate-smart practices into our
+                    projects, we strive to ensure the longevity and
+                    effectiveness of our interventions in the face of
+                    environmental uncertainties.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- box3 -->
+
+        <div class="row mt-5 aboutusrow">
+            <div class="col-lg-8">
+              <ul class="visionList ul">
+                <li class="list li">
+                  <h4 class="headings">Advocacy for Policy Change</h4>
+                  <p class="p">
+                    To achieve widespread impact, we actively engage in advocacy
+                    efforts to influence policy change. By collaborating with
+                    policymakers, stakeholders, and like-minded organizations,
+                    we work towards creating policies that support sustainable
+                    water management. Our vision extends beyond immediate
+                    action, aiming to create a policy environment that fosters
+                    long-term positive change.
+                  </p>
+                </li>
+                <li class="list li">
+                  <h4 class="headings">Community Collaboration</h4>
+                  <p class="p">
+                    Central to our vision is the belief that communities play a
+                    vital role in shaping their own futures. We actively
+                    collaborate with local residents, fostering a sense of
+                    ownership and involvement in decision-making processes.
+                    Through inclusive partnerships, we ensure that our
+                    initiatives not only meet the immediate needs of communities
+                    but also reflect their aspirations and priorities.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4" id="img-div">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about us Ends Here  -->
+
+
+    <script src="scripty.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+
+  </html>
+  <!-- footer Ends Here  -->
+  <script src="scripty.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+  --primary-color: blue;
+  --primary-font: 'Barlow Condensed', sans-serif;
+}
+html{
+  font-size: 10px;
+}
+body{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+  left: 0;
+  z-index: 2;
+}
+.header .navbar{
+  background: rgb(9, 9, 9) !important;
+}
+nav a img{ 
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.nav-item{
+  margin: 0 3rem;
+  color: white;
+}
+.nav-item a{
+  color: white;
+  font-size: 2rem;
+  transition: all .5s ease-in-out;
+}
+.header .navbar-nav .nav-link:hover, 
+.header .navbar-nav .nav-link.active{
+  color: goldenrod;
+}
+#navbarNav{
+  position: relative;
+  float: right;
+}
+.header .navbar-toggler{
+  color: white;
+  border: none;
+  outline: none;
+}
+.header .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.footer{
+  background-color: black;
+  font-size: 2.5rem;
+}
+.footer .row a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.footer .row .col a{
+  transition: all .5s ease-in-out;
+}
+
+.footer .row .col a:hover{
+  color: goldenrod;
+  cursor: pointer;
+}
+#footer-icons .col-auto {
+  height: 4rem;
+  width: 5rem;
+  margin: 2rem 2rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;
+}
+#footer-icons .col-auto:hover{
+  color: darkgoldenrod;
+  background-color: goldenrod;
+  cursor: pointer;
+}

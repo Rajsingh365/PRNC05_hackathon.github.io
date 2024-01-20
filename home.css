@@ -1,0 +1,35 @@
+.homecontainer {
+  height: 100vh;
+  align-items: start;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://images.pexels.com/photos/989959/pexels-photo-989959.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.maintext {
+  margin-top: 12rem;
+  color: rgb(40, 234, 176);
+}
+.auto-type{
+  font-size: 7rem;
+}
+
+@media (max-width: 1000px){
+  .auto-type{
+    font-size: 6rem;
+  }
+}
+@media (max-width: 700px){
+  .auto-type{
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px){
+  .auto-type{
+    font-size: 4rem;
+  }
+}
